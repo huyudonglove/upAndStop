@@ -60,7 +60,7 @@ export default {
               for(let i=0;i<self.allChuck;i++){
                 console.log(i,89);
                 
-               self.allSlice.push(new Blob([self.bufferFile.slice(i,(i+1)*self.size)]));
+               self.allSlice.push(new Blob([self.bufferFile.slice(i*self.size,(i+1)*self.size)]));
                
               }
               console.log(self.allSlice,9999)  
